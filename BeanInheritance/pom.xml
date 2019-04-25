@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>[4.3.18,)</spring.version>
   </properties>
 
   <dependencies>
@@ -25,21 +26,21 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>4.3.6.RELEASE</version>
+      <version>${spring.version}</version>
       <scope>runtime</scope>
     </dependency>
     
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
-      <version>4.3.6.RELEASE</version>
+      <version>${spring.version}</version>
       <scope>runtime</scope>
     </dependency>
     
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>4.3.6.RELEASE</version>
+      <version>${spring.version}</version>
       <scope>runtime</scope>
     </dependency>
     
