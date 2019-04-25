@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- The 'byName' mode injects the object dependency according to name of the bean. 
+In such case, property name and bean name must be same. It internally calls 
+setter method. -->
+	<!-- <bean id="studentBean" class="com.beans.Student" autowire="byName"/> -->
+	
+<!-- The 'byType' mode injects the object dependency according to type. 
+So property name and bean name can be different. It internally calls setter method. -->
+	<bean id="studentBean" class="com.beans.Student" autowire="byType"/>
+	
+	<bean id="address" class="com.beans.Address">
+		<property name="address" value="Kolkata"/>
+	</bean>
+
+</beans>

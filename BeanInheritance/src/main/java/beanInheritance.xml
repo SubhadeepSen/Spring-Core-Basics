@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Bean without address reference -->
+	<bean id="studentBean1" class="com.beans.Student">
+		<constructor-arg type="java.lang.String" value="Subhadeep Sen"/>
+		<constructor-arg type="int" value="24"/>
+	</bean>
+<!-- Bean of Address -->
+	<bean id="addressBean" class="com.beans.Address">
+		<constructor-arg value="Kolkata" type="java.lang.String"/>
+	</bean>
+	
+<!-- Creating a new bean which inherits the property of studentBean1 and adds address refence -->
+	<bean id="studentBean2" class="com.beans.Student" parent="studentBean1">
+		<constructor-arg ref="addressBean"/>
+	</bean>
+	
+</beans>

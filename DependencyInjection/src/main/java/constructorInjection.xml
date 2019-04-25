@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- USING INDEX OF CONSTRUCTOR PARAMETERS -->
+	<!-- <bean id="studentBean" class="com.bean.Student">
+		<constructor-arg index="0" value="Subhadeep Sen"/>
+		<constructor-arg index="1" value="24"/>
+		<constructor-arg index="2" value="Kolkata"/>
+	</bean> -->
+
+<!-- USING TYPE OF CONSTRUCTOR PARAMETERS -->	
+	<bean id="studentBean" class="com.bean.Student">
+		<constructor-arg type="java.lang.String" value="Subhadeep Sen"/>
+		<constructor-arg type="int" value="24"/>
+		<constructor-arg type="java.lang.String" value="Kolkata"/>
+	</bean>
+
+</beans>
