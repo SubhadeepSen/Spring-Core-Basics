@@ -1,2 +1,1 @@
-# Spring Framework
-# Springboot Framework
+# Spring Framework - Core
